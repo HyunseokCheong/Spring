@@ -9,5 +9,4 @@ public class Oauth2JwtSecurityApplication {
     public static void main(String[] args) {
         SpringApplication.run(Oauth2JwtSecurityApplication.class, args);
     }
-    
 }

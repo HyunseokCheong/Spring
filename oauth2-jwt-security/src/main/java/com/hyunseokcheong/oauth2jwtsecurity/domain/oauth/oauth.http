@@ -1,0 +1,7 @@
+### 인가코드는 application-oauth.yml
+POST http://localhost:8080/api/auth/kakao
+Content-Type: application/json
+
+{
+  "authorizationCode": "OSuTKNIvsjjSGYNRV0p9OVrjkI5HKGHssXdyoixajYIUiqv9XSJGqI-oEJoC1AMZsS_UEAo9dVwAAAGJHBWuIg"
+}

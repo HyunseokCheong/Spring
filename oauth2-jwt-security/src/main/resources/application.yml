@@ -1,9 +1,7 @@
 spring:
-  h2:
-    console:
-      enabled: true
-  datasource:
-    url: ${TTHUNDER_DATASOURCE_URL}
-    driver-class-name: org.h2.Driver
-    username: ${TTHUNDER_DATASOURCE_USERNAME}
-    password: ${TTHUNDER_DATASOURCE_PASSWORD}
+  profiles:
+    include:
+      - db
+      - jpa
+      - jwt
+      - oauth
