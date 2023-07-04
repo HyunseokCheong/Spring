@@ -3,5 +3,8 @@ POST http://localhost:8080/api/auth/kakao
 Content-Type: application/json
 
 {
-  "authorizationCode": "OSuTKNIvsjjSGYNRV0p9OVrjkI5HKGHssXdyoixajYIUiqv9XSJGqI-oEJoC1AMZsS_UEAo9dVwAAAGJHBWuIg"
+  "grantType": "authorization_code",
+  "clientId": "0e214e52f05f2503e2cec70553b1d498",
+  "redirectUri": "http://localhost:8080/kakao/callback",
+  "code": "1um9bZsSoNj6kmRx8BH_tIHQp3Ws5nsAyfaHMMZCP1mpZ3YGChk6E_PU0O1lGxWZk_ipYAo9dNsAAAGJHpJbhg"
 }

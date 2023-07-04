@@ -10,7 +10,13 @@ import org.springframework.util.MultiValueMap;
 @NoArgsConstructor
 public class KakaoLoginRequest implements OAuthLoginRequest {
     
-    private String authorizationCode;
+    private String grantType;
+    
+    private String clientId;
+    
+    private String redirectUri;
+    
+    private String code;
     
     @Override
     public Member.OAuthProvider oAuthProvider() {
@@ -20,7 +26,10 @@ public class KakaoLoginRequest implements OAuthLoginRequest {
     @Override
     public MultiValueMap<String, String> makeBody() {
         MultiValueMap<String, String> body = new LinkedMultiValueMap<>();
-        body.add("code", authorizationCode);
+        body.add("code", code);
+        body.add("grant_type", grantType);
+        body.add("client_id", clientId);
+        body.add("redirect_uri", redirectUri);
         return body;
     }
 }
